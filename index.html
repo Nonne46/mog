@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add the Tailwind CSS CDN here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>TTS Settings</title>
+  </head>
+  <body class="bg-gray-200 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-6 rounded-lg shadow-md max-w-md w-full space-y-4">
+      <h1 class="text-2xl font-bold">TTS Settings</h1>
+      <label for="tts-api-url-input" class="block font-medium"
+        >TTS API URL:</label
+      >
+      <input
+        type="text"
+        id="tts-api-url-input"
+        placeholder="Enter TTS API URL"
+        class="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+      />
+      <label for="channel-input" class="block font-medium">Канал:</label>
+      <input
+        type="text"
+        id="channel-input"
+        placeholder="Enter channel name"
+        class="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+      />
+      <label for="msg-type" class="block font-medium">Что озвучивать:</label>
+      <select
+        id="msg-type"
+        class="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+      >
+        <option value="all">Всё</option>
+        <option value="highlighted-message">Только выделенные сообщения</option>
+      </select>
+      <label for="speaker-select" class="block font-medium"
+        >Выбрать диктора:</label
+      >
+      <select
+        id="speaker-select"
+        class="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+      >
+        <option value="geralt">Геральт</option>
+        <option value="cicero">Цицерон</option>
+        <option value="bandit">Бандит</option>
+        <option value="papich_alt">Папич</option>
+        <option value="bebey_alt">Бэбэй</option>
+        <option value="briman">Уоллес Брин</option>
+        <option value="alyx">Аликс Вэнс</option>
+        <option value="vance">Илай Вэнс</option>
+        <option value="kleiner_alt">Доктор Кляйнер</option>
+        <option value="father_grigori">Отец Григорий</option>
+        <option value="barni">Барни Калхун</option>
+        <option value="mossman">Джудит Моссман</option>
+        <option value="glados_alt">Гладос</option>
+      </select>
+      <button
+        id="connect-button"
+        class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md"
+      >
+        Применить
+      </button>
+    </div>
+
+    <!-- Load the generated bundle.js (webpack output) -->
+    <script src="main.js"></script>
+  </body>
+</html>
