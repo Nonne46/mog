@@ -7,6 +7,17 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <style>
+      .input-field {
+        transition: all 0.3s;
+      }
+
+      .input-field.visible {
+        background-color: white;
+        color: black;
+        transition: all 0.3s;
+      }
+    </style>
     <title>DIG DIG DIG DUG</title>
   </head>
   <body class="bg-gray-200 min-h-screen flex items-center justify-center">
@@ -14,11 +25,12 @@
       <h1 class="text-2xl font-bold">DIG DIG DIG DUG</h1>
       <label for="tts-api-url-input" class="block font-medium">API URL:</label>
       <input
-        type="text"
+        type="password"
         id="tts-api-url-input"
         placeholder="Enter TTS API URL"
-        class="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+        class="input-field w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
       />
+
       <label for="channel-input" class="block font-medium">Канал:</label>
       <input
         type="text"
